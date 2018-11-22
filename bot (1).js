@@ -102,18 +102,18 @@ client.on('message', async msg => {
 	if (command === `play`) {
 		const voiceChannel = msg.member.voiceChannel;
         
-        if (!voiceChannel) return msg.channel.send("انت لم تدخل روم صوتي");
+        if (!voiceChannel) return msg.channel.send("انت مش في روم يابابا");
         
         const permissions = voiceChannel.permissionsFor(msg.client.user);
         
         if (!permissions.has('CONNECT')) {
 
-			return msg.channel.send("ليست لدي صلاحيات للدخول الى الروم");
+			return msg.channel.send("مش هعرف اخش عشان الادمن ابن الوسخه مش مديني صلاحيه");
         }
         
 		if (!permissions.has('SPEAK')) {
 
-			return msg.channel.send("انا لا يمكنني التكلم في هاذه الروم");
+			return msg.channel.send("مش هعرف اتكلم");
 		}
 
 		if (!permissions.has('EMBED_LINKS')) {
@@ -162,7 +162,7 @@ client.on('message', async msg => {
 						});
 					} catch (err) {
 						console.error(err);
-						return msg.channel.send('لم يتم اختيار الاغنية');
+						return msg.channel.send('متكفرنيش اختار الاعنيه');
                     }
                     
 					const videoIndex = parseInt(response.first().content);
