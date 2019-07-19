@@ -8,7 +8,7 @@ const fetchVideoInfo = require('youtube-info');
 
 const YouTube = require('simple-youtube-api');
 
-const youtube = new YouTube("NTE1MDc2ODk3Nzg5NzA2MjQw.DtgEVw.D8RsmePZsw5ZfMmriDBjYHwbW-0");
+const youtube = new YouTube("NjAxOTIyODIxNzE0ODcwMzAw.XTJWrg.3sm6HVneiDcGysAxFNCSXnYVrck");
 
 const queue = new Map();
 
@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = "+";
 /////////////////////////
 ////////////////////////
 
